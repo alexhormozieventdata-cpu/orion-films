@@ -21,7 +21,7 @@ export default function Gallery() {
   const [selected, setSelected] = useState(null);
 
   return (
-    <div className="bg-white py-20 px-6">
+    <div className="bg-white py-20 px-6 touch-pan-y">
       {/* Grid */}
       <div className="grid md:grid-cols-3 gap-6">
         {images.map((img, i) => (
@@ -34,8 +34,10 @@ export default function Gallery() {
             <img
               src={img}
               alt="gallery"
-              className="w-full h-72 object-cover transition duration-500 hover:scale-110"
-             loading="lazy" />
+              draggable="false"
+              className="w-full h-72 object-cover select-none transition duration-500 hover:scale-110"
+              loading="lazy"
+            />
           </motion.div>
         ))}
       </div>
@@ -51,7 +53,9 @@ export default function Gallery() {
             className="max-w-[90%] max-h-[90%] rounded-xl"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-           loading="lazy" />
+            draggable="false"
+            loading="eager"
+          />
         </div>
       )}
     </div>
