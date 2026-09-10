@@ -1,8 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { lazy } from "react";
 
-import img from '../assets/image/DSC08309.JPG'
+import img from '../assets/image/DSC08309.webp'
 
 const Counter = ({ end, suffix = "" }) => {
   const ref = useRef(null);
@@ -108,7 +107,7 @@ export default function StatsSection() {
           <img
             src={img}
             className="rounded-2xl shadow-lg object-cover w-full h-120"
-            loading={lazy}
+            loading="lazy"
             alt="Orion Films Poduction"
           />
         </motion.div>

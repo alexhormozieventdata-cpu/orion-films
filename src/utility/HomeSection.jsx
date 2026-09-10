@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import img from "../assets/image/DSC02475.JPG";
+import img from "../assets/image/DSC02475.webp";
 
 const HomeSection = () => {
   return (

@@ -12,7 +12,7 @@ export function FaceFocus() {
         <img
           src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486"
           className="w-full h-[400px] object-cover transition duration-500 hover:scale-125"
-        />
+         loading="lazy" />
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
           <p className="text-lg">Pure Love & Real Emotion</p>

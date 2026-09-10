@@ -10,7 +10,7 @@ const WeddingServicesSection = () => {
       description:
         "Make your destination wedding unforgettable with cinematic storytelling and breathtaking visuals.",
       image:
-        "https://weddingpur.com/wp-content/uploads/2022/10/bride-kissing-groom-after-reception-weddingpur-scaled-e1667218643129-200x300.jpg",
+        "https://weddingpur.com/wp-content/uploads/2022/10/bride-kissing-groom-after-reception-weddingpur-scaled-e1667218643129-200x300.webp",
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const WeddingServicesSection = () => {
       description:
         "Capturing real emotions, natural moments, and genuine expressions that tell your true story.",
       image:
-        "https://weddingpur.com/wp-content/uploads/2022/11/Deepika-singh-in-bridal-look-scaled-e1668245378786-300x200.jpg",
+        "https://weddingpur.com/wp-content/uploads/2022/11/Deepika-singh-in-bridal-look-scaled-e1668245378786-300x200.webp",
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const WeddingServicesSection = () => {
       description:
         "Your wedding turned into a cinematic masterpiece filled with emotions and timeless memories.",
       image:
-        "https://weddingpur.com/wp-content/uploads/2022/03/Indian-Bride-with-Mother-WEDDINGPUR-200x300.jpg",
+        "https://weddingpur.com/wp-content/uploads/2022/03/Indian-Bride-with-Mother-WEDDINGPUR-200x300.webp",
     },
     {
       id: 4,
@@ -34,7 +34,7 @@ const WeddingServicesSection = () => {
       description:
         "Capture your love story before the big day with creative and romantic pre-wedding shoots.",
       image:
-        "https://weddingpur.com/wp-content/uploads/2022/11/couple-prewedding-on-terrace-weddingpur-scaled-e1668246110729-300x200.jpg",
+        "https://weddingpur.com/wp-content/uploads/2022/11/couple-prewedding-on-terrace-weddingpur-scaled-e1668246110729-300x200.webp",
     },
   ];
 

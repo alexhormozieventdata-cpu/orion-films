@@ -4,7 +4,7 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 import { FaCheckCircle } from "react-icons/fa";
 
-import img from '../assets/image/DSC08309.JPG';
+import img from '../assets/image/DSC08309.webp';
 
 export default function ContactSection() {
   const [showToast, setShowToast] = useState(false);

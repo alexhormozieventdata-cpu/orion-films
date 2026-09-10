@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { NavLink, useNavigate } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.webp";
 import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { FaSnapchatGhost } from "react-icons/fa";
 
@@ -21,7 +21,7 @@ export default function Footer() {
         {/* ✅ BRAND */}
         <div onClick={() => navigate("/")} className="cursor-pointer max-w-sm">
           
-          <img src={logo} alt="logo" className="w-24 h-auto" />
+          <img src={logo} alt="logo" className="w-24 h-auto"  loading="lazy" />
 
           <p className="mt-3 text-gray-400 text-sm leading-relaxed">
             Capturing timeless wedding stories with cinematic excellence.

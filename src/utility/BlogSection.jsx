@@ -6,7 +6,7 @@ const blogs = [
     title: "Top 10 Wedding Photographers in India",
     desc: "Discover the best candid photographers for your big day.",
     image:
-      "https://www.candidshutters.com/maintenance/wp-content/uploads/2023/09/best-wedding-photographers-new-york-USA-1.jpg",
+      "https://www.candidshutters.com/maintenance/wp-content/uploads/2023/09/best-wedding-photographers-new-york-USA-1.webp",
   },
   {
     id: 2,
@@ -73,7 +73,7 @@ export default function BlogSection() {
                   src={blog.image}
                   alt={blog.title}
                   className="w-full h-[320px] object-cover transition duration-500 hover:scale-110"
-                />
+                 loading="lazy" />
               </div>
 
               {/* Overlay */}

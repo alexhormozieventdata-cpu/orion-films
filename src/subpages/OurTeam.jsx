@@ -102,7 +102,7 @@ function TiltCard({ member }) {
         src={member.img}
         alt={member.name}
         className="w-full h-[320px] object-cover"
-      />
+       loading="lazy" />
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 flex flex-col justify-end p-5">

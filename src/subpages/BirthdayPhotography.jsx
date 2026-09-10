@@ -59,7 +59,7 @@ const BirthdayPhotography = () => {
             className="rounded-3xl shadow-xl"
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
-          />
+           loading="lazy" />
 
           <motion.div
             initial={{ opacity: 0, x: 100 }}
@@ -115,7 +115,7 @@ const BirthdayPhotography = () => {
                 <img
                   src={img}
                   className="w-full h-[220px] object-cover group-hover:scale-110 transition duration-500"
-                />
+                 loading="lazy" />
 
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
                   <p className="text-white text-sm">View</p>

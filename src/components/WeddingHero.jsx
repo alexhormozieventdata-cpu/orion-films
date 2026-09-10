@@ -1,8 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom"; // ✅ IMPORT
-import { lazy } from "react";
-import img from '../assets/image/DSC02483.JPG'
+import img from '../assets/image/DSC02483.webp'
 
 export default function WeddingHero() {
   const navigate = useNavigate();
@@ -14,7 +13,8 @@ export default function WeddingHero() {
       <img src={img}
     
       className="absolute top-0 left-0 w-full h-full object-cover block"
-      loading='lazy'
+      loading="eager"
+      fetchPriority="high"
       alt="Orion Films Production"
       ></img>
       {/* <video

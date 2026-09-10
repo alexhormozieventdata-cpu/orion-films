@@ -2,9 +2,9 @@ import React from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
-import img1 from '../assets/image/abhi.jpg';
-import img2 from '../assets/image/santu.jpg';
-import img3 from '../assets/image/images.png';
+import img1 from '../assets/image/abhi.webp';
+import img2 from '../assets/image/santu.webp';
+import img3 from '../assets/image/images.webp';
 
 
 const teamMembers = [
@@ -50,7 +50,7 @@ const TrustedClients = () => {
                 src={member.image}
                 alt={member.name}
                 className="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full object-cover mb-3 border-2 border-amber-500"
-              />
+               loading="lazy" />
               <h3 className="font-semibold">{member.name}</h3>
               <p className="text-gray-400 text-sm">{member.role}</p>
             </div>

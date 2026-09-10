@@ -2,15 +2,15 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-import img1 from '../assets/image/A7404425.JPG'
-import img2 from '../assets/image/A7404436.JPG'
-import img3 from '../assets/image/DSC00511.JPG'
-import img4 from '../assets/image/DSC00519.JPG'
-import img5 from '../assets/image/DSC02499.JPG'
-import img6 from '../assets/image/DSC03529.JPG'
-import img7 from '../assets/image/DSC03548.JPG'
-import img8 from '../assets/image/DSC03567.JPG'
-import img9 from '../assets/image/pholio.jpg'
+import img1 from '../assets/image/A7404425.webp'
+import img2 from '../assets/image/A7404436.webp'
+import img3 from '../assets/image/DSC00511.webp'
+import img4 from '../assets/image/DSC00519.webp'
+import img5 from '../assets/image/DSC02499.webp'
+import img6 from '../assets/image/DSC03529.webp'
+import img7 from '../assets/image/DSC03548.webp'
+import img8 from '../assets/image/DSC03567.webp'
+import img9 from '../assets/image/pholio.webp'
 
 
 const images = [
@@ -35,7 +35,7 @@ export default function Gallery() {
               src={img}
               alt="gallery"
               className="w-full h-72 object-cover transition duration-500 hover:scale-110"
-            />
+             loading="lazy" />
           </motion.div>
         ))}
       </div>
@@ -51,7 +51,7 @@ export default function Gallery() {
             className="max-w-[90%] max-h-[90%] rounded-xl"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-          />
+           loading="lazy" />
         </div>
       )}
     </div>

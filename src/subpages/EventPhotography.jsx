@@ -54,7 +54,7 @@ const EventPhotography = () => {
               content="Capture your special moments with Orion Films – expert wedding photographers & cinematic videographers serving Bihar & Jharkhand."
             />
           
-            <meta property="og:image" content="/logo.png" />
+            <meta property="og:image" content="/logo.webp" />
             <meta property="og:type" content="website" />
           
             {/* Twitter SEO */}
@@ -64,7 +64,7 @@ const EventPhotography = () => {
               name="twitter:description"
               content="Premium wedding photography & cinematic films in Bihar & Jharkhand."
             />
-            <meta name="twitter:image" content="/logo.png" />
+            <meta name="twitter:image" content="/logo.webp" />
           
             {/* Local SEO */}
             <meta name="geo.region" content="IN-BR" />
@@ -99,7 +99,7 @@ const EventPhotography = () => {
           className="rounded-3xl shadow-2xl"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-        />
+         loading="lazy" />
 
         <motion.div
           initial={{ opacity: 0, x: 100 }}
@@ -154,7 +154,7 @@ const EventPhotography = () => {
               <img
                 src={img}
                 className="w-full h-[220px] object-cover group-hover:scale-110 transition duration-500"
-              />
+               loading="lazy" />
 
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
                 <p className="text-white text-sm">View Moment</p>

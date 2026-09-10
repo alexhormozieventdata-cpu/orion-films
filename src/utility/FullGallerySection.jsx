@@ -94,7 +94,7 @@ export default function FullGallerySection() {
                     src={item.image}
                     alt={item.title}
                     className="w-full object-cover transition duration-500 group-hover:scale-110"
-                  />
+                   loading="lazy" />
                   <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition" />
                 </div>
 

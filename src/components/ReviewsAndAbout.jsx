@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import img from '../assets/image/UserIcon.png';
+import img from '../assets/image/UserIcon.webp';
 
 const reviews = [
   {
@@ -66,7 +66,7 @@ bg-linear-to-br from-amber-600 via-gray-900 to-black text-white">
                   src={item.image}
                   alt={item.name}
                   className="w-12 h-12 rounded-full object-cover"
-                />
+                 loading="lazy" />
                 <div>
                   <h3 className="font-semibold">{item.name}</h3>
                   <p className="text-sm text-gray-400">{item.role}</p>

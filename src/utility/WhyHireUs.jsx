@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
-import img from '../assets/image/DSC02475.JPG'
+import img from '../assets/image/DSC02475.webp'
 
 import {
   FaCheckCircle,

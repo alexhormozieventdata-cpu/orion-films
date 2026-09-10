@@ -30,7 +30,7 @@ export function NetflixSlider() {
             <img
               src={item.thumbnail}
               className="w-full h-[180px] object-cover"
-            />
+             loading="lazy" />
 
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition">

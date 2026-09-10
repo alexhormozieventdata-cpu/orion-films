@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { lazy } from "react";
 
-import img from '../assets/image/DSC08309.JPG';
+import img from '../assets/image/DSC08309.webp';
 export function BeforeAfter() {
   const [pos, setPos] = useState(50);
 
@@ -19,7 +18,7 @@ export function BeforeAfter() {
         <img
           src={img}
           className="absolute w-full h-full object-cover rounded-2xl"
-        />
+         loading="lazy" />
 
         <div
           className="absolute top-0 left-0 h-full overflow-hidden"
@@ -28,7 +27,7 @@ export function BeforeAfter() {
           <img
             src="https://images.unsplash.com/photo-1520854221256-17451cc331bf"
             className="w-full h-full object-cover rounded-2xl"
-          />
+           loading="lazy" />
         </div>
 
         {/* Slider Line */}

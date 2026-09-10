@@ -2,14 +2,14 @@
 import { motion } from "framer-motion";
 
 const images = [
-  { src: "/img1.jpg", x: 300, y: 150 },
-  { src: "/img2.jpg", x: 200, y: 150 },
-  { src: "/img3.jpg", x: 0, y: 250 },
-  { src: "/img4.jpg", x: -200, y: 150 },
-  { src: "/img5.jpg", x: -320, y: 150 },
-  { src: "/img6.jpg", x: 320, y: 0 },
-  { src: "/img7.jpg", x: 200, y: 0 },
-  { src: "/img8.jpg", x: -200, y: 0 },
+  { src: "/img1.webp", x: 300, y: 150 },
+  { src: "/img2.webp", x: 200, y: 150 },
+  { src: "/img3.webp", x: 0, y: 250 },
+  { src: "/img4.webp", x: -200, y: 150 },
+  { src: "/img5.webp", x: -320, y: 150 },
+  { src: "/img6.webp", x: 320, y: 0 },
+  { src: "/img7.webp", x: 200, y: 0 },
+  { src: "/img8.webp", x: -200, y: 0 },
 ];
 
 export default function ImageGridScroll() {
@@ -49,17 +49,17 @@ export default function ImageGridScroll() {
               }}
               
               viewport={{ once: true }}
-            />
+             loading="lazy" />
           ))}
 
           {/* Main Center Image */}
           <motion.img
-            src="/main.jpg"
+            src="/main.webp"
             className="absolute w-40 h-40 object-cover rounded-2xl z-10"
             initial={{ scale: 2 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 1 }}
-          />
+           loading="lazy" />
 
         </div>
       </div>

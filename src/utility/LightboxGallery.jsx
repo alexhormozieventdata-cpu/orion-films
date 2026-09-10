@@ -32,7 +32,7 @@ export function LightboxGallery() {
           className="fixed inset-0 bg-black/90 flex items-center justify-center z-50"
           onClick={() => setSelected(null)}
         >
-          <img src={selected} className="max-h-[90%] rounded-2xl" />
+          <img src={selected} className="max-h-[90%] rounded-2xl"  loading="lazy" />
         </div>
       )}
     </section>

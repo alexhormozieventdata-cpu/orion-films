@@ -5,248 +5,248 @@ const RecentPhotoshootsSection = () => {
   const galleryImages = [
     {
       id: 1,
-      url: "https://weddingpur.com/wp-content/uploads/2026/02/Bride-Shining-in-Her-Wedding-Party-Look-scaled-e1771302690887.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/02/Bride-Shining-in-Her-Wedding-Party-Look-768x1151.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2026/02/Bride-Shining-in-Her-Wedding-Party-Look-scaled-e1771302690887.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/02/Bride-Shining-in-Her-Wedding-Party-Look-768x1151.webp",
       alt: "Bride Shining in Her Wedding Party Look",
       width: 768,
       height: 1151
     },
     {
       id: 2,
-      url: "https://weddingpur.com/wp-content/uploads/2023/12/DSC01599-scaled-e1771479911823.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2023/12/DSC01599-768x512.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2023/12/DSC01599-scaled-e1771479911823.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2023/12/DSC01599-768x512.webp",
       alt: "Best wedding photography studio in Patna - weddingpur",
       width: 768,
       height: 512
     },
     {
       id: 3,
-      url: "https://weddingpur.com/wp-content/uploads/2023/12/Indian-bride-with-gramophone-weddingpur-scaled-e1771480369598.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2023/12/Indian-bride-with-gramophone-weddingpur-768x511.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2023/12/Indian-bride-with-gramophone-weddingpur-scaled-e1771480369598.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2023/12/Indian-bride-with-gramophone-weddingpur-768x511.webp",
       alt: "Indian bride with gramophone - weddingpur",
       width: 768,
       height: 511
     },
     {
       id: 4,
-      url: "https://weddingpur.com/wp-content/uploads/2022/11/Deepika-singh-in-bridal-look-scaled-e1771563719931.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/11/Deepika-singh-in-bridal-look-scaled-e1668245378786-768x512.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2022/11/Deepika-singh-in-bridal-look-scaled-e1771563719931.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/11/Deepika-singh-in-bridal-look-scaled-e1668245378786-768x512.webp",
       alt: "Deepika-singh-in-bridal-look",
       width: 768,
       height: 512
     },
     {
       id: 5,
-      url: "https://weddingpur.com/wp-content/uploads/2026/02/Joyful-Haldi-Smile-Moment-During-Pre-Wedding-Celebration-scaled-e1771221388120.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/02/Joyful-Haldi-Smile-Moment-During-Pre-Wedding-Celebration-768x512.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2026/02/Joyful-Haldi-Smile-Moment-During-Pre-Wedding-Celebration-scaled-e1771221388120.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/02/Joyful-Haldi-Smile-Moment-During-Pre-Wedding-Celebration-768x512.webp",
       alt: "Golden Haldi Moments of Togetherness",
       width: 768,
       height: 512
     },
     {
       id: 6,
-      url: "https://weddingpur.com/wp-content/uploads/2026/02/bride-and-groom-laughing-moment-scaled-e1771304076216.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/02/bride-and-groom-laughing-moment-768x1152.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2026/02/bride-and-groom-laughing-moment-scaled-e1771304076216.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/02/bride-and-groom-laughing-moment-768x1152.webp",
       alt: "Where Love Feels Like Home",
       width: 768,
       height: 1152
     },
     {
       id: 7,
-      url: "https://weddingpur.com/wp-content/uploads/2022/10/happy-groom-at-wedding-weddingpur-patna-scaled-e1666893682689.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/10/happy-groom-at-wedding-weddingpur-patna-scaled-e1666893682689-768x1152.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2022/10/happy-groom-at-wedding-weddingpur-patna-scaled-e1666893682689.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/10/happy-groom-at-wedding-weddingpur-patna-scaled-e1666893682689-768x1152.webp",
       alt: "Happy groom at wedding",
       width: 768,
       height: 1152
     },
     {
       id: 8,
-      url: "https://weddingpur.com/wp-content/uploads/2022/10/indian-bridal-portraits-weddingpur-scaled-e1666892473798.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/10/indian-bridal-portraits-weddingpur-scaled-e1666892473798-768x1152.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2022/10/indian-bridal-portraits-weddingpur-scaled-e1666892473798.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/10/indian-bridal-portraits-weddingpur-scaled-e1666892473798-768x1152.webp",
       alt: "Indian bridal portraits",
       width: 768,
       height: 1152
     },
     {
       id: 9,
-      url: "https://weddingpur.com/wp-content/uploads/2026/03/Traditional-Bride-Wedding-Outfit-scaled-e1773078623932.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/03/Traditional-Bride-Wedding-Outfit-768x1152.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2026/03/Traditional-Bride-Wedding-Outfit-scaled-e1773078623932.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/03/Traditional-Bride-Wedding-Outfit-768x1152.webp",
       alt: "Traditional Bride Wedding Outfit",
       width: 768,
       height: 1152
     },
     {
       id: 10,
-      url: "https://weddingpur.com/wp-content/uploads/2023/12/trending-bride-poses-weddingpur-scaled-e1771480244525.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2023/12/trending-bride-poses-weddingpur-768x512.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2023/12/trending-bride-poses-weddingpur-scaled-e1771480244525.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2023/12/trending-bride-poses-weddingpur-768x512.webp",
       alt: "Trending bride poses - weddingpur",
       width: 768,
       height: 512
     },
     {
       id: 11,
-      url: "https://weddingpur.com/wp-content/uploads/2022/11/wedding-photography-poses-weddingpur-scaled-e1771562698469.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/11/wedding-photography-poses-weddingpur-scaled-e1668261141688-768x512.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2022/11/wedding-photography-poses-weddingpur-scaled-e1771562698469.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/11/wedding-photography-poses-weddingpur-scaled-e1668261141688-768x512.webp",
       alt: "Wedding photography poses - weddingpur",
       width: 768,
       height: 512
     },
     {
       id: 12,
-      url: "https://weddingpur.com/wp-content/uploads/2023/12/Engagement-Photoshoot-by-weddingpur-scaled-e1703870896153.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2023/12/Engagement-Photoshoot-by-weddingpur-768x1152.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2023/12/Engagement-Photoshoot-by-weddingpur-scaled-e1703870896153.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2023/12/Engagement-Photoshoot-by-weddingpur-768x1152.webp",
       alt: "Engagement Photoshoot by weddingpur",
       width: 768,
       height: 1152
     },
     {
       id: 13,
-      url: "https://weddingpur.com/wp-content/uploads/2026/03/wedding-photography-in-Bihar-weddingpur-scaled-e1773261475301.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/03/wedding-photography-in-Bihar-weddingpur-768x1152.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2026/03/wedding-photography-in-Bihar-weddingpur-scaled-e1773261475301.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/03/wedding-photography-in-Bihar-weddingpur-768x1152.webp",
       alt: "Wedding photography in Bihar - weddingpur",
       width: 768,
       height: 1152
     },
     {
       id: 14,
-      url: "https://weddingpur.com/wp-content/uploads/2026/02/Bride-Dancing-with-Joy-at-Her-Wedding-scaled-e1771303329818.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/02/Bride-Dancing-with-Joy-at-Her-Wedding-768x512.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2026/02/Bride-Dancing-with-Joy-at-Her-Wedding-scaled-e1771303329818.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/02/Bride-Dancing-with-Joy-at-Her-Wedding-768x512.webp",
       alt: "Girls Just Wanna Dance at the Wedding",
       width: 768,
       height: 512
     },
     {
       id: 15,
-      url: "https://weddingpur.com/wp-content/uploads/2022/10/bride-kissing-groom-after-reception-weddingpur-scaled-e1667218643129.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/10/bride-kissing-groom-after-reception-weddingpur-scaled-e1667218643129-768x1152.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2022/10/bride-kissing-groom-after-reception-weddingpur-scaled-e1667218643129.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/10/bride-kissing-groom-after-reception-weddingpur-scaled-e1667218643129-768x1152.webp",
       alt: "Bride kissing groom after reception - weddingpur",
       width: 768,
       height: 1152
     },
     {
       id: 16,
-      url: "https://weddingpur.com/wp-content/uploads/2022/11/Bride-with-her-sister-in-haldi-function-weddingpur-scaled-e1668322603458.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/11/Bride-with-her-sister-in-haldi-function-weddingpur-scaled-e1668322603458-768x1152.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2022/11/Bride-with-her-sister-in-haldi-function-weddingpur-scaled-e1668322603458.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/11/Bride-with-her-sister-in-haldi-function-weddingpur-scaled-e1668322603458-768x1152.webp",
       alt: "Bride with her sister in haldi function - weddingpur",
       width: 768,
       height: 1152
     },
     {
       id: 17,
-      url: "https://weddingpur.com/wp-content/uploads/2022/10/bridal-portraits-ideas-for-wedding-scaled-e1666892962276.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/10/bridal-portraits-ideas-for-wedding-scaled-e1666892962276-768x1152.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2022/10/bridal-portraits-ideas-for-wedding-scaled-e1666892962276.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/10/bridal-portraits-ideas-for-wedding-scaled-e1666892962276-768x1152.webp",
       alt: "Bridal portraits ideas for wedding",
       width: 768,
       height: 1152
     },
     {
       id: 18,
-      url: "https://weddingpur.com/wp-content/uploads/2023/12/DSC01530-scaled-e1703749041964.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2023/12/DSC01530-768x1152.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2023/12/DSC01530-scaled-e1703749041964.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2023/12/DSC01530-768x1152.webp",
       alt: "Best wedding photography studio in Patna - weddingpur",
       width: 768,
       height: 1152
     },
     {
       id: 19,
-      url: "https://weddingpur.com/wp-content/uploads/2022/10/indian-wedding-couple-weddingpur-scaled-e1771609571501.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/10/indian-wedding-couple-weddingpur-scaled-e1666893595127-768x512.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2022/10/indian-wedding-couple-weddingpur-scaled-e1771609571501.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/10/indian-wedding-couple-weddingpur-scaled-e1666893595127-768x512.webp",
       alt: "Indian wedding couple",
       width: 768,
       height: 512
     },
     {
       id: 20,
-      url: "https://weddingpur.com/wp-content/uploads/2026/02/bride-and-groom-happy-wedding-night-scaled-e1771304185352.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/02/bride-and-groom-happy-wedding-night-768x1151.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2026/02/bride-and-groom-happy-wedding-night-scaled-e1771304185352.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/02/bride-and-groom-happy-wedding-night-768x1151.webp",
       alt: "Bride and groom happy wedding night",
       width: 768,
       height: 1151
     },
     {
       id: 21,
-      url: "https://weddingpur.com/wp-content/uploads/2026/03/couple-shoot-for-wedding-weddingpur-scaled-e1773261994127.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/03/couple-shoot-for-wedding-weddingpur-768x512.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2026/03/couple-shoot-for-wedding-weddingpur-scaled-e1773261994127.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/03/couple-shoot-for-wedding-weddingpur-768x512.webp",
       alt: "Couple shoot for wedding - weddingpur",
       width: 768,
       height: 512
     },
     {
       id: 22,
-      url: "https://weddingpur.com/wp-content/uploads/2022/03/Trending-Bridal-Poses-WEDDINGPUR-scaled-e1647539198859.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/03/Trending-Bridal-Poses-WEDDINGPUR-768x1152.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2022/03/Trending-Bridal-Poses-WEDDINGPUR-scaled-e1647539198859.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/03/Trending-Bridal-Poses-WEDDINGPUR-768x1152.webp",
       alt: "Trending Bridal Poses",
       width: 768,
       height: 1152
     },
     {
       id: 23,
-      url: "https://weddingpur.com/wp-content/uploads/2022/03/Trending-Bridal-Poses-of-2022-scaled-e1647539051165.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/03/Trending-Bridal-Poses-of-2022-768x1152.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2022/03/Trending-Bridal-Poses-of-2022-scaled-e1647539051165.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/03/Trending-Bridal-Poses-of-2022-768x1152.webp",
       alt: "Trending Bridal Poses of 2022",
       width: 768,
       height: 1152
     },
     {
       id: 24,
-      url: "https://weddingpur.com/wp-content/uploads/2023/12/Beautiful-bride-weddingpur-1-scaled-e1771480822284.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2023/12/Beautiful-bride-weddingpur-1-768x511.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2023/12/Beautiful-bride-weddingpur-1-scaled-e1771480822284.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2023/12/Beautiful-bride-weddingpur-1-768x511.webp",
       alt: "Beautiful bride - weddingpur",
       width: 768,
       height: 511
     },
     {
       id: 25,
-      url: "https://weddingpur.com/wp-content/uploads/2026/02/bride-beautifull-wedding-pose-scaled-e1771303518696.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/02/bride-beautifull-wedding-pose-768x1151.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2026/02/bride-beautifull-wedding-pose-scaled-e1771303518696.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/02/bride-beautifull-wedding-pose-768x1151.webp",
       alt: "Bride beautiful wedding pose",
       width: 768,
       height: 1151
     },
     {
       id: 26,
-      url: "https://weddingpur.com/wp-content/uploads/2026/03/wedding-editorial-shoot-weddingpur-scaled-e1773261531589.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/03/wedding-editorial-shoot-weddingpur-768x1152.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2026/03/wedding-editorial-shoot-weddingpur-scaled-e1773261531589.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/03/wedding-editorial-shoot-weddingpur-768x1152.webp",
       alt: "Wedding editorial shoot - weddingpur",
       width: 768,
       height: 1152
     },
     {
       id: 27,
-      url: "https://weddingpur.com/wp-content/uploads/2022/10/wedding-reception-pictures-weddingpur-scaled-e1667219109825.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/10/wedding-reception-pictures-weddingpur-scaled-e1667219109825-768x1152.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2022/10/wedding-reception-pictures-weddingpur-scaled-e1667219109825.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/10/wedding-reception-pictures-weddingpur-scaled-e1667219109825-768x1152.webp",
       alt: "Wedding reception pictures - weddingpur",
       width: 768,
       height: 1152
     },
     {
       id: 28,
-      url: "https://weddingpur.com/wp-content/uploads/2026/03/Indian-Bridal-Outfit-Ready-for-Wedding-Ceremony-scaled-e1773079449305.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/03/Indian-Bridal-Outfit-Ready-for-Wedding-Ceremony-768x512.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2026/03/Indian-Bridal-Outfit-Ready-for-Wedding-Ceremony-scaled-e1773079449305.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/03/Indian-Bridal-Outfit-Ready-for-Wedding-Ceremony-768x512.webp",
       alt: "Indian Bridal Outfit Ready for Wedding Ceremony",
       width: 768,
       height: 512
     },
     {
       id: 29,
-      url: "https://weddingpur.com/wp-content/uploads/2022/03/Marraige-purpose-photography-in-Patna-scaled-e1647539357933.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/03/Marraige-purpose-photography-in-Patna-768x1152.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2022/03/Marraige-purpose-photography-in-Patna-scaled-e1647539357933.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/03/Marraige-purpose-photography-in-Patna-768x1152.webp",
       alt: "Marriage purpose photography in Patna",
       width: 768,
       height: 1152
     },
     {
       id: 30,
-      url: "https://weddingpur.com/wp-content/uploads/2022/10/Grooms-assesories-weddingpur-scaled-e1771609684394.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/10/Grooms-assesories-weddingpur-scaled-e1666893727805-768x512.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2022/10/Grooms-assesories-weddingpur-scaled-e1771609684394.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2022/10/Grooms-assesories-weddingpur-scaled-e1666893727805-768x512.webp",
       alt: "Grooms accessories - weddingpur",
       width: 768,
       height: 512
     },
     {
       id: 31,
-      url: "https://weddingpur.com/wp-content/uploads/2026/02/Bride-and-Groom-Ring-Exchange-Moment-scaled-e1771304049713.jpg",
-      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/02/Bride-and-Groom-Ring-Exchange-Moment-768x512.jpg",
+      url: "https://weddingpur.com/wp-content/uploads/2026/02/Bride-and-Groom-Ring-Exchange-Moment-scaled-e1771304049713.webp",
+      thumbnail: "https://weddingpur.com/wp-content/uploads/2026/02/Bride-and-Groom-Ring-Exchange-Moment-768x512.webp",
       alt: "Bride and Groom Ring Exchange Moment",
       width: 768,
       height: 512

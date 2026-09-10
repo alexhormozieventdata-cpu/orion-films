@@ -41,7 +41,7 @@ const Home = () => {
     content="Capture your special moments with Orion Films – expert wedding photographers & cinematic videographers serving Bihar & Jharkhand."
   />
 
-  <meta property="og:image" content="/logo.png" />
+  <meta property="og:image" content="/logo.webp" />
   <meta property="og:type" content="website" />
 
   {/* Twitter SEO */}
@@ -51,7 +51,7 @@ const Home = () => {
     name="twitter:description"
     content="Premium wedding photography & cinematic films in Bihar & Jharkhand."
   />
-  <meta name="twitter:image" content="/logo.png" />
+  <meta name="twitter:image" content="/logo.webp" />
 
   {/* Local SEO */}
   <meta name="geo.region" content="IN-BR" />

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.webp";
 
 export default function Navbar({ setOpenModal }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +49,7 @@ export default function Navbar({ setOpenModal }) {
             src={logo}
             alt="Logo"
             className="h-12 sm:h-14 md:h-16 w-auto object-contain"
-          />
+           loading="lazy" />
         </NavLink>
 
         {/* DESKTOP MENU */}

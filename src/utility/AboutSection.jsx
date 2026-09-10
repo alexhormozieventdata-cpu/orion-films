@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import { lazy } from "react";
 
-import img from '../assets/image/DSC02475.JPG';
+import img from '../assets/image/DSC02475.webp';
 
 export default function AboutSection() {
   return (
@@ -18,7 +17,7 @@ export default function AboutSection() {
           <div className="overflow-hidden rounded-2xl shadow-xl">
             <img
               src={img}
-              loading={lazy}
+              loading="lazy"
               alt="Orion Films Production"
               className="w-full h-full object-cover hover:scale-105 transition duration-500"
             />

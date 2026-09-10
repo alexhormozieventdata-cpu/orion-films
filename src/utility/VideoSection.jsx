@@ -6,7 +6,7 @@ const videos = [
   {
     id: "1PBVPvfM2lw",
     thumbnail:
-      "https://www.candidshutters.com/maintenance/wp-content/uploads/2024/06/best-wedding-photographer-indian-wedding-films.jpeg",
+      "https://www.candidshutters.com/maintenance/wp-content/uploads/2024/06/best-wedding-photographer-indian-wedding-films.webp",
     title: "Wedding Film",
   },
   {
@@ -44,7 +44,7 @@ export default function VideoCards() {
             <img
               src={video.thumbnail}
               className="w-full h-80 object-cover"
-            />
+             loading="lazy" />
 
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition" />

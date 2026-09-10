@@ -3,10 +3,9 @@ import { Helmet } from 'react-helmet-async'
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom';
-import { lazy } from 'react';
 
-import img from '../assets/image/DSC02514.JPG'
-import img1 from '../assets/image/A7404425.JPG'
+import img from '../assets/image/DSC02514.webp'
+import img1 from '../assets/image/A7404425.webp'
 
 const images = [
   "https://images.unsplash.com/photo-1519741497674-611481863552",
@@ -49,7 +48,7 @@ const WeddingPhotography = () => {
               content="Capture your special moments with Orion Films – expert wedding photographers & cinematic videographers serving Bihar & Jharkhand."
             />
           
-            <meta property="og:image" content="/logo.png" />
+            <meta property="og:image" content="/logo.webp" />
             <meta property="og:type" content="website" />
           
             {/* Twitter SEO */}
@@ -59,7 +58,7 @@ const WeddingPhotography = () => {
               name="twitter:description"
               content="Premium wedding photography & cinematic films in Bihar & Jharkhand."
             />
-            <meta name="twitter:image" content="/logo.png" />
+            <meta name="twitter:image" content="/logo.webp" />
           
             {/* Local SEO */}
             <meta name="geo.region" content="IN-BR" />
@@ -75,7 +74,7 @@ const WeddingPhotography = () => {
         <img
           src={img}
           className="absolute w-full h-full object-cover opacity-80"
-          loading={lazy}
+          loading="eager"
           alt='Orion Films Production'
         />
         <div className="absolute inset-0 bg-linear-to-b from-black/30 to-black"></div>
@@ -101,7 +100,7 @@ const WeddingPhotography = () => {
       <div className="py-20 px-6 md:px-16 grid md:grid-cols-2 gap-10 items-center">
         <motion.img
           src={img1}
-          loading={lazy}
+          loading="lazy"
           alt='Orion Films Production'
           className="rounded-3xl"
           initial={{ opacity: 0, x: -100 }}
@@ -158,7 +157,7 @@ const WeddingPhotography = () => {
               className="overflow-hidden rounded-2xl"
               whileHover={{ scale: 1.05 }}
             >
-              <img src={img} className="w-full h-[300px] object-cover" />
+              <img src={img} className="w-full h-[300px] object-cover"  loading="lazy" />
             </motion.div>
           ))}
         </div>

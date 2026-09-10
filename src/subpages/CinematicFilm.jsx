@@ -4,9 +4,8 @@ import { motion } from 'framer-motion'
 import { Helmet } from 'react-helmet-async'
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import { lazy } from 'react';
 
-import img from '../assets/image/Cinematic.jpeg'
+import img from '../assets/image/Cinematic.webp'
 import video from '../assets/image/cinemitic.mp4';
 
 
@@ -41,7 +40,7 @@ const CinematicFilm = () => {
               content="Capture your special moments with Orion Films – expert wedding photographers & cinematic videographers serving Bihar & Jharkhand."
             />
           
-            <meta property="og:image" content="/logo.png" />
+            <meta property="og:image" content="/logo.webp" />
             <meta property="og:type" content="website" />
           
             {/* Twitter SEO */}
@@ -51,7 +50,7 @@ const CinematicFilm = () => {
               name="twitter:description"
               content="Premium wedding photography & cinematic films in Bihar & Jharkhand."
             />
-            <meta name="twitter:image" content="/logo.png" />
+            <meta name="twitter:image" content="/logo.webp" />
           
             {/* Local SEO */}
             <meta name="geo.region" content="IN-BR" />
@@ -73,6 +72,8 @@ const CinematicFilm = () => {
           autoPlay
           loop
           muted
+          playsInline
+          preload="metadata"
           className="absolute w-full h-full object-cover opacity-100"
           ><source src={video} type="video/mp4" /></video>
 
@@ -116,7 +117,7 @@ const CinematicFilm = () => {
 
         <motion.img
           src={img}
-          loading={lazy}
+          loading="lazy"
           alt='Orion Films Production'
           className="rounded-3xl shadow-2xl"
           initial={{ opacity: 0, x: -100 }}

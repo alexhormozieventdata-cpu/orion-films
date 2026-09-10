@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { lazy } from "react";
 
-import img1 from '../assets/image/DSC00511.JPG';
-import img2 from '../assets/image/AboutDSC02483.JPG';
-import img3 from '../assets/image/DSC03567.JPG';
-import img4 from '../assets/image/DSC03548.JPG';
+import img1 from '../assets/image/DSC00511.webp';
+import img2 from '../assets/image/AboutDSC02483.webp';
+import img3 from '../assets/image/DSC03567.webp';
+import img4 from '../assets/image/DSC03548.webp';
 
 
 const images = [
@@ -39,7 +38,7 @@ export default function HeroSlider() {
                     <img
                         src={images[index]}
                         alt="slide"
-                        loading={lazy}
+                        loading="eager"
                         className="w-full h-full object-cover"
                     />
                 </motion.div>

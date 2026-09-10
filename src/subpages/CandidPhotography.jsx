@@ -5,7 +5,7 @@ import { BeforeAfter } from "../utility/BeforeAfter";
 import { FaceFocus } from "../utility/FaceFocus";
 import { InstagramReel } from "../utility/InstagramReel";
 import { useNavigate } from "react-router-dom";
-import img from "../assets/image/DSC00519.JPG";
+import img from "../assets/image/DSC00519.webp";
 
 const candidImages = [
   "https://images.unsplash.com/photo-1522673607200-164d1b6ce486",

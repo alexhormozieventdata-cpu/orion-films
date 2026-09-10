@@ -38,10 +38,10 @@ export function StatsSection() {
           transition={{ duration: 0.8 }}
         >
           <img
-            src="https://weddingpur.com/wp-content/uploads/2023/12/Engagement-Photoshoot-by-weddingpur-683x1024.jpg"
+            src="https://weddingpur.com/wp-content/uploads/2023/12/Engagement-Photoshoot-by-weddingpur-683x1024.webp"
             alt="Engagement"
             className="rounded-2xl shadow-lg w-full"
-          />
+           loading="lazy" />
         </motion.div>
       </div>
     </div>
