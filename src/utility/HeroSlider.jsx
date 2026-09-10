@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion as Motion, AnimatePresence } from "framer-motion";
 
-import img1 from '../assets/image/DSC00511.webp';
-import img2 from '../assets/image/AboutDSC02483.webp';
-import img3 from '../assets/image/DSC03567.webp';
-import img4 from '../assets/image/DSC03548.webp';
+import img2 from '../assets/optimized/image/AboutDSC02483.webp';
 
 
 const images = [
@@ -27,7 +24,7 @@ export default function HeroSlider() {
 
             {/* BACKGROUND SLIDES */}
             <AnimatePresence>
-                <motion.div
+                <Motion.div
                     key={index}
                     className="absolute inset-0"
                     initial={{ opacity: 0 }}
@@ -41,7 +38,7 @@ export default function HeroSlider() {
                         loading="eager"
                         className="w-full h-full object-cover"
                     />
-                </motion.div>
+                </Motion.div>
             </AnimatePresence>
 
             {/* DARK OVERLAY */}
@@ -53,7 +50,7 @@ export default function HeroSlider() {
                 <div className="grid lg:grid-cols-2 w-full gap-8 items-end">
 
                     {/* LEFT TEXT */}
-                    <motion.div
+                    <Motion.div
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
@@ -75,12 +72,12 @@ export default function HeroSlider() {
                         <button className="mt-6 px-6 py-3 text-black font-bold bg-white rounded-full hover:bg-amber-400 hover:text-white">
                             View Portfolio
                         </button>
-                    </motion.div>
+                    </Motion.div>
 
 
 
                     {/* RIGHT RATING */}
-                    <motion.div
+                    <Motion.div
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
@@ -91,7 +88,7 @@ export default function HeroSlider() {
                         <div className="text-2xl">
                             ★ ★ ★ ★ ☆
                         </div>
-                    </motion.div>
+                    </Motion.div>
 
                 </div>
 

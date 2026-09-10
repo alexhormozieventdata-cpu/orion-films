@@ -2,6 +2,15 @@
 
 @tailwind utilities;
 
+:root {
+  --brand-gold: #d9a441;
+  --brand-gold-light: #ffe09a;
+  --brand-gold-dark: #8e611b;
+  --brand-ink: #0b0b0b;
+  --brand-panel: #171717;
+  --brand-ivory: #f7f2e8;
+}
+
 html, body, #root {
    margin: 0;
   padding: 0;
@@ -17,5 +26,75 @@ html, body, #root {
 
 /* index.css */
 .input {
-  @apply w-full p-3 rounded-lg bg-black/40 border border-gray-700 focus:outline-none focus:border-yellow-400;
+  @apply w-full p-3 rounded-lg bg-black/40 border border-gray-700 focus:outline-none;
+  border-color: color-mix(in srgb, var(--brand-gold) 45%, transparent);
+}
+
+/* Keep legacy utility classes aligned with the brand palette. */
+.bg-yellow-400,
+.bg-yellow-500,
+.bg-amber-500,
+.bg-amber-600,
+.bg-pink-500,
+.bg-pink-600,
+.bg-purple-600 {
+  background: linear-gradient(135deg, var(--brand-gold-light), var(--brand-gold)) !important;
+  box-shadow: 0 8px 22px color-mix(in srgb, var(--brand-gold) 24%, transparent);
+}
+
+.text-yellow-400,
+.text-yellow-500,
+.text-amber-300,
+.text-amber-400,
+.text-amber-500,
+.text-purple-400,
+.hover\:text-yellow-400:hover,
+.hover\:text-yellow-500:hover,
+.hover\:text-pink-500:hover,
+.hover\:text-blue-500:hover,
+.hover\:text-blue-400:hover,
+.hover\:text-red-500:hover {
+  color: var(--brand-gold-light) !important;
+}
+
+.border-yellow-400,
+.border-amber-400,
+.border-amber-500 {
+  border-color: var(--brand-gold) !important;
+}
+
+.hover\:bg-yellow-400:hover,
+.hover\:bg-yellow-600:hover,
+.hover\:bg-amber-600:hover,
+.hover\:bg-pink-600:hover {
+  background: linear-gradient(135deg, var(--brand-gold), var(--brand-gold-dark)) !important;
+}
+
+.hover\:scale-105:hover,
+.hover\:scale-110:hover {
+  filter: brightness(1.08);
+}
+
+.from-amber-500,
+.from-amber-600,
+.from-pink-500,
+.from-pink-400,
+.to-pink-400,
+.to-purple-600,
+.via-pink-50 {
+  --tw-gradient-from: var(--brand-gold) var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: color-mix(in srgb, var(--brand-gold) 0%, transparent) var(--tw-gradient-to-position) !important;
+}
+
+.to-amber-600,
+.to-pink-400,
+.to-purple-100,
+.via-pink,
+.via-pink-50 {
+  --tw-gradient-to: var(--brand-gold-dark) var(--tw-gradient-to-position) !important;
+}
+
+.bg-green-500,
+.bg-emerald-600 {
+  background-color: var(--brand-gold-dark) !important;
 }

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import img from '../assets/image/DSC02475.webp';
+import img from '../assets/optimized/image/DSC02475.webp';
 
 export default function AboutSection() {
   return (

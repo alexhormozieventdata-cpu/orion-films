@@ -1,11 +1,11 @@
 import React from 'react'
-// eslint-disable-next-line no-unused-vars
+ 
 import { motion } from 'framer-motion'
 import { Helmet } from 'react-helmet-async'
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 
-import img from '../assets/image/Cinematic.webp'
+import img from '../assets/optimized/image/Cinematic-upright.webp'
 import video from '../assets/image/cinemitic.mp4';
 
 

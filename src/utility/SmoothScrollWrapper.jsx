@@ -1,32 +1,34 @@
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
-
-let lenis; // 👈 GLOBAL
+import { setLenis } from "./lenisInstance";
 
 export default function SmoothScrollWrapper({ children }) {
   useEffect(() => {
-    // ❌ const lenis hatao
-    lenis = new Lenis({
+    const instance = new Lenis({
       duration: 1.2,
-      smooth: true,
-      smoothTouch: true,
-      easing: (t) => 1 - Math.pow(1 - t, 4),
       smoothWheel: true,
+      syncTouch: true,
+      touchInertiaMultiplier: 35,
+      easing: (t) => 1 - Math.pow(1 - t, 4),
     });
 
+    setLenis(instance);
+
+    let animationFrame;
+
     function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
+      instance.raf(time);
+      animationFrame = requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf);
+    animationFrame = requestAnimationFrame(raf);
 
     return () => {
-      lenis.destroy();
+      cancelAnimationFrame(animationFrame);
+      instance.destroy();
+      setLenis(null);
     };
   }, []);
 
   return children;
 }
-
-export { lenis };

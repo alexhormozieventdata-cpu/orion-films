@@ -1,23 +1,10 @@
 import React from 'react'
-import { Helmet } from 'react-helmet-async'
-// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
+import { Helmet } from 'react-helmet-async'
 import { useNavigate } from 'react-router-dom';
 
-import img from '../assets/image/DSC02514.webp'
-import img1 from '../assets/image/A7404425.webp'
-
-const images = [
-  "https://images.unsplash.com/photo-1519741497674-611481863552",
-  "https://images.unsplash.com/photo-1520854221256-17451cc331bf",
-  "https://images.unsplash.com/photo-1509927083803-4bd519298ac4",
-  "https://images.unsplash.com/photo-1511285560929-80b456fea0bc",
-  "https://images.unsplash.com/photo-1522673607200-164d1b6ce486",
-  "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92",
-  "https://images.unsplash.com/photo-1519741497674-611481863552",
-  "https://images.unsplash.com/photo-1520854221256-17451cc331bf",
-  "https://images.unsplash.com/photo-1509927083803-4bd519298ac4",
-];
+import img from '../assets/optimized/image/DSC02514.webp'
+import img1 from '../assets/optimized/image/A7404425.webp'
 
 const WeddingPhotography = () => {
 

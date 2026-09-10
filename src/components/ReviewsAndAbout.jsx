@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-
-import img from '../assets/image/UserIcon.webp';
+import img from '../assets/optimized/image/UserIcon.webp';
 
 const reviews = [
   {

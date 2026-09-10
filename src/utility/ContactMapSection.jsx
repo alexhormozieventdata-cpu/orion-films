@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-unused-vars
+ 
 import { motion } from "framer-motion";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { useOutletContext } from "react-router-dom";

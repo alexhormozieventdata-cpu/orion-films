@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
-// eslint-disable-next-line no-unused-vars
+ 
 import { motion } from 'framer-motion'
 import { NetflixSlider } from '../utility/NetflixSlider'
 import { useNavigate } from 'react-router-dom';

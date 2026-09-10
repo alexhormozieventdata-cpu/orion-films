@@ -1,10 +1,10 @@
 import React from "react";
-// eslint-disable-next-line no-unused-vars
+ 
 import { motion } from "framer-motion";
 
-import img1 from '../assets/image/abhi.webp';
-import img2 from '../assets/image/santu.webp';
-import img3 from '../assets/image/images.webp';
+import img1 from '../assets/optimized/image/abhi.webp';
+import img2 from '../assets/optimized/image/santu.webp';
+import img3 from '../assets/optimized/image/images.webp';
 
 
 const teamMembers = [

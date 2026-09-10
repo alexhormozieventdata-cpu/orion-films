@@ -1,24 +1,55 @@
-import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { motion as Motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { NavLink, useLocation } from "react-router-dom";
-import logo from "../assets/logo.webp";
+import { NavLink } from "react-router-dom";
+import logo from "../assets/optimized/logo.webp";
+import { getLenis } from "../utility/lenisInstance";
 
 export default function Navbar({ setOpenModal }) {
   const [isOpen, setIsOpen] = useState(false);
   const [serviceOpen, setServiceOpen] = useState(false);
-  const location = useLocation();
-
-  // ✅ AUTO CLOSE ON ROUTE CHANGE
-  useEffect(() => {
-    setIsOpen(false);
-    setServiceOpen(false);
-  }, [location]);
+  const navRef = useRef(null);
 
   const handleCloseAll = () => {
     setIsOpen(false);
     setServiceOpen(false);
   };
+
+  useEffect(() => {
+    const html = document.documentElement;
+    const body = document.body;
+    const lenis = getLenis();
+
+    if (isOpen) {
+      html.style.overflow = "hidden";
+      body.style.overflow = "hidden";
+      lenis?.stop();
+    } else {
+      html.style.overflow = "";
+      body.style.overflow = "";
+      lenis?.start();
+    }
+
+    return () => {
+      html.style.overflow = "";
+      body.style.overflow = "";
+      getLenis()?.start();
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (isOpen && navRef.current && !navRef.current.contains(event.target)) {
+        handleCloseAll();
+      }
+    };
+
+    document.addEventListener("pointerdown", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("pointerdown", handleOutsideClick);
+    };
+  }, [isOpen]);
 
   const home = [{ name: "Home", path: "/" }];
 
@@ -38,17 +69,33 @@ export default function Navbar({ setOpenModal }) {
   ];
 
   return (
-    <motion.nav className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md text-white border-b border-white/10">
+    <Motion.nav
+      ref={navRef}
+      className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md text-white border-b border-white/10"
+    >
       
       {/* NAVBAR CONTENT */}
       <div className="relative w-full px-4 sm:px-6 md:px-10 py-3 flex justify-between items-center">
 
         {/* LOGO */}
-        <NavLink to="/" onClick={handleCloseAll}>
+        <NavLink
+          to="/"
+          onClick={handleCloseAll}
+          aria-label="Orion Films home"
+          className="group relative flex items-center justify-center px-2 py-1"
+        >
+          <span
+            aria-hidden="true"
+            className="absolute inset-x-[-1.5rem] inset-y-0 rounded-full bg-gradient-to-r from-transparent via-white/35 to-transparent opacity-70 blur-xl transition duration-500 group-hover:via-white/65 group-hover:opacity-100"
+          />
+          <span
+            aria-hidden="true"
+            className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-yellow-300/90 to-transparent opacity-80"
+          />
           <img
             src={logo}
             alt="Logo"
-            className="h-12 sm:h-14 md:h-16 w-auto object-contain"
+            className="relative z-10 h-12 sm:h-14 md:h-16 w-auto object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.35)] transition duration-500 group-hover:drop-shadow-[0_0_16px_rgba(255,255,255,0.7)]"
            loading="lazy" />
         </NavLink>
 
@@ -81,7 +128,7 @@ export default function Navbar({ setOpenModal }) {
 
             <AnimatePresence>
               {serviceOpen && (
-                <motion.div
+                <Motion.div
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
@@ -97,7 +144,7 @@ export default function Navbar({ setOpenModal }) {
                       {s.name}
                     </NavLink>
                   ))}
-                </motion.div>
+                </Motion.div>
               )}
             </AnimatePresence>
           </div>
@@ -140,11 +187,11 @@ export default function Navbar({ setOpenModal }) {
       {/* MOBILE MENU */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
+          <Motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-lg px-6 py-6 z-50"
+            className="md:hidden absolute top-full left-0 w-full max-h-[calc(100vh-5rem)] overflow-y-auto bg-black/95 backdrop-blur-lg px-6 py-6 z-50"
           >
             
             {home.map((link, i) => (
@@ -191,9 +238,9 @@ export default function Navbar({ setOpenModal }) {
               Book Now 💍
             </button>
 
-          </motion.div>
+          </Motion.div>
         )}
       </AnimatePresence>
-    </motion.nav>
+    </Motion.nav>
   );
 }

@@ -1,11 +1,11 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
-// eslint-disable-next-line no-unused-vars
+ 
 import { motion } from 'framer-motion'
 import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 
-import img from '../assets/image/prewedding.webp'
+import img from '../assets/optimized/image/prewedding.webp'
 
 const testimonials = [
   {

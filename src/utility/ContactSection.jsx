@@ -1,10 +1,10 @@
-// eslint-disable-next-line no-unused-vars
+ 
 import { motion } from "framer-motion";
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import { FaCheckCircle } from "react-icons/fa";
 
-import img from '../assets/image/DSC08309.webp';
+import img from '../assets/optimized/image/DSC08309.webp';
 
 export default function ContactSection() {
   const [showToast, setShowToast] = useState(false);

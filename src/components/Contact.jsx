@@ -1,8 +1,6 @@
-import React from 'react'
 import { Helmet } from 'react-helmet-async'
 import ContactHeader from '../utility/ContactHeader'
 import ContactSection from '../utility/ContactSection'
-import MarqueeText from '../utility/MarqueeText'
 import ContactMapSection from '../utility/ContactMapSection'
 
 

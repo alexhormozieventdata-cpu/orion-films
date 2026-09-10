@@ -1,33 +1,32 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 // NOTE: If you don't want external dependency, we replaced masonry with CSS grid
 // import Masonry from "react-masonry-css";
-// eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
 
-import img1 from "../assets/portpholio/1.webp";
-import img4 from "../assets/portpholio/4.webp";
-import img5 from "../assets/portpholio/5.webp";
-import img6 from "../assets/portpholio/6.webp";
-import img7 from "../assets/portpholio/7.webp";
-import img8 from "../assets/portpholio/8.webp";
-import img9 from "../assets/portpholio/9.webp";
-import img10 from "../assets/portpholio/10.webp";
-import img11 from "../assets/portpholio/11.webp";
-import img12 from "../assets/portpholio/12.webp";
-import img13 from "../assets/portpholio/13.webp";
-import img14 from "../assets/portpholio/14.webp";
-import img15 from "../assets/portpholio/15.webp";
-import img16 from "../assets/portpholio/16.webp";
-import img17 from "../assets/portpholio/17.webp";
-import img18 from "../assets/portpholio/18.webp";
-import img19 from "../assets/portpholio/19.webp";
-import img20 from "../assets/portpholio/20.webp";
-import img21 from "../assets/portpholio/21.webp";
-import img22 from "../assets/portpholio/22.webp";
-import img23 from "../assets/portpholio/23.webp";
-import img24 from "../assets/portpholio/24.webp";
-import img25 from "../assets/portpholio/25.webp";
-import img26 from "../assets/portpholio/23_1.webp";
+import img1 from "../assets/optimized/portpholio/1.webp";
+import img4 from "../assets/optimized/portpholio/4.webp";
+import img5 from "../assets/optimized/portpholio/5.webp";
+import img6 from "../assets/optimized/portpholio/6.webp";
+import img7 from "../assets/optimized/portpholio/7.webp";
+import img8 from "../assets/optimized/portpholio/8.webp";
+import img9 from "../assets/optimized/portpholio/9.webp";
+import img10 from "../assets/optimized/portpholio/10.webp";
+import img11 from "../assets/optimized/portpholio/11.webp";
+import img12 from "../assets/optimized/portpholio/12.webp";
+import img13 from "../assets/optimized/portpholio/13.webp";
+import img14 from "../assets/optimized/portpholio/14.webp";
+import img15 from "../assets/optimized/portpholio/15.webp";
+import img16 from "../assets/optimized/portpholio/16.webp";
+import img17 from "../assets/optimized/portpholio/17.webp";
+import img18 from "../assets/optimized/portpholio/18.webp";
+import img19 from "../assets/optimized/portpholio/19.webp";
+import img20 from "../assets/optimized/portpholio/20.webp";
+import img21 from "../assets/optimized/portpholio/21.webp";
+import img22 from "../assets/optimized/portpholio/22.webp";
+import img23 from "../assets/optimized/portpholio/23.webp";
+import img24 from "../assets/optimized/portpholio/24.webp";
+import img25 from "../assets/optimized/portpholio/25.webp";
+import img26 from "../assets/optimized/portpholio/23_1.webp";
 
 const images = [
   img1, img4, img5,
@@ -47,17 +46,13 @@ const data = images.map((img, index) => {
   return {
     category,
     image: img,
+    keepTopVisible: index >= 3 && index <= 5,
   };
 });
 
-const breakpointColumns = {
-  default: 3,
-  1024: 2,
-  640: 1,
-};
-
 export default function FullGallerySection() {
   const [filter, setFilter] = useState("All");
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const filteredData =
     filter === "All" ? data : data.filter((item) => item.category === filter);
@@ -65,12 +60,12 @@ export default function FullGallerySection() {
   return (
     <section className="bg-black text-white py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-center gap-4 mb-10">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-10 px-2">
           {["All", "Pre Wedding", "Wedding","Ceremony"].map((cat) => (
             <button
               key={cat}
               onClick={() => setFilter(cat)}
-              className={`px-4 py-2 rounded-full border ${
+              className={`px-3 sm:px-4 py-2 text-sm sm:text-base whitespace-nowrap rounded-full border ${
                 filter === cat ? "bg-purple-600 text-white" : "border-white"
               }`}
             >
@@ -88,13 +83,18 @@ export default function FullGallerySection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4 }}
                 className="group cursor-pointer"
+                onClick={() => setSelectedImage(item.image)}
               >
-                <div className="relative overflow-hidden rounded-xl">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full object-cover transition duration-500 group-hover:scale-110"
-                   loading="lazy" />
+                    className={`w-full h-full object-cover transition duration-500 group-hover:scale-110 ${
+                      item.keepTopVisible ? "object-top" : "object-center"
+                    }`}
+                    loading="lazy"
+                    decoding="async"
+                  />
                   <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition" />
                 </div>
 
@@ -106,6 +106,31 @@ export default function FullGallerySection() {
           })}
         </div>
       </div>
+
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Full-size portfolio image"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button
+            type="button"
+            className="absolute right-5 top-5 text-3xl leading-none text-white"
+            aria-label="Close full-size image"
+            onClick={() => setSelectedImage(null)}
+          >
+            &times;
+          </button>
+          <img
+            src={selectedImage}
+            alt="Full-size portfolio"
+            className="max-h-[90vh] max-w-full rounded-lg object-contain"
+            onClick={(event) => event.stopPropagation()}
+          />
+        </div>
+      )}
 
       <style>
         {` 

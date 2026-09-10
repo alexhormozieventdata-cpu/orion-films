@@ -1,7 +1,7 @@
-// eslint-disable-next-line no-unused-vars
+ 
 import { motion } from "framer-motion";
 import { NavLink, useNavigate } from "react-router-dom";
-import logo from "../assets/logo.webp";
+import logo from "../assets/optimized/logo.webp";
 import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { FaSnapchatGhost } from "react-icons/fa";
 

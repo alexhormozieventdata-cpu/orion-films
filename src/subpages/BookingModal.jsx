@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
@@ -52,12 +51,6 @@ const [loading, setLoading] = useState(false);
     .then(() => {
 
       // ✅ WhatsApp
-      const text = `New Booking:
-Name: ${formData.name}
-Phone: ${formData.phone}
-Service: ${formData.service}
-Date: ${formData.date}`;
-
       // window.open(
       //   `https://wa.me/919876543210?text=${encodeURIComponent(text)}`,
       //   "_blank"

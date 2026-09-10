@@ -1,7 +1,7 @@
-// eslint-disable-next-line no-unused-vars
+ 
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom"; // ✅ IMPORT
-import img from '../assets/image/DSC02483.webp'
+import img from '../assets/optimized/image/DSC02483.webp'
 
 export default function WeddingHero() {
   const navigate = useNavigate();
@@ -12,7 +12,7 @@ export default function WeddingHero() {
       {/* 🎥 Background Video */}
       <img src={img}
     
-      className="absolute top-0 left-0 w-full h-full object-cover block"
+      className="absolute top-0 left-0 w-full h-full object-cover object-left md:object-center block"
       loading="eager"
       fetchPriority="high"
       alt="Orion Films Production"

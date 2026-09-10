@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-// eslint-disable-next-line no-unused-vars
+ 
 import { motion } from "framer-motion";
 import Gallery from "../utility/Gallery";
 import FullGallerySection from "../utility/FullGallerySection";

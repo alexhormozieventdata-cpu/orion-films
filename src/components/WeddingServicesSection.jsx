@@ -1,6 +1,10 @@
 import React from "react";
-// eslint-disable-next-line no-unused-vars
+ 
 import { motion } from "framer-motion";
+import weddingImage from "../assets/optimized/image/wedding.webp";
+import preWeddingImage from "../assets/optimized/image/prewedding.webp";
+import candidImage from "../assets/optimized/image/DSC03548.webp";
+import cinematicImage from "../assets/optimized/image/Cinematic-upright.webp";
 
 const WeddingServicesSection = () => {
   const servicesData = [
@@ -9,32 +13,28 @@ const WeddingServicesSection = () => {
       title: "Destination Wedding Photography",
       description:
         "Make your destination wedding unforgettable with cinematic storytelling and breathtaking visuals.",
-      image:
-        "https://weddingpur.com/wp-content/uploads/2022/10/bride-kissing-groom-after-reception-weddingpur-scaled-e1667218643129-200x300.webp",
+      image: weddingImage,
     },
     {
       id: 2,
       title: "Candid Wedding Photography",
       description:
         "Capturing real emotions, natural moments, and genuine expressions that tell your true story.",
-      image:
-        "https://weddingpur.com/wp-content/uploads/2022/11/Deepika-singh-in-bridal-look-scaled-e1668245378786-300x200.webp",
+      image: candidImage,
     },
     {
       id: 3,
       title: "Wedding Cinematography",
       description:
         "Your wedding turned into a cinematic masterpiece filled with emotions and timeless memories.",
-      image:
-        "https://weddingpur.com/wp-content/uploads/2022/03/Indian-Bride-with-Mother-WEDDINGPUR-200x300.webp",
+      image: cinematicImage,
     },
     {
       id: 4,
       title: "Pre-Wedding Shoots",
       description:
         "Capture your love story before the big day with creative and romantic pre-wedding shoots.",
-      image:
-        "https://weddingpur.com/wp-content/uploads/2022/11/couple-prewedding-on-terrace-weddingpur-scaled-e1668246110729-300x200.webp",
+      image: preWeddingImage,
     },
   ];
 

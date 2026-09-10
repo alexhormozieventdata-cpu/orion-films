@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const statsData = [
   { value: 16, suffix: "+", label: "Years of Excellence!" },

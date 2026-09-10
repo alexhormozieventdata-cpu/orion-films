@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import img from '../assets/image/DSC08309.webp';
+import img from '../assets/optimized/image/DSC08309.webp';
 export function BeforeAfter() {
   const [pos, setPos] = useState(50);
 

@@ -1,11 +1,11 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { BeforeAfter } from "../utility/BeforeAfter";
 import { FaceFocus } from "../utility/FaceFocus";
 import { InstagramReel } from "../utility/InstagramReel";
 import { useNavigate } from "react-router-dom";
-import img from "../assets/image/DSC00519.webp";
+import img from "../assets/optimized/image/DSC00519.webp";
 
 const candidImages = [
   "https://images.unsplash.com/photo-1522673607200-164d1b6ce486",

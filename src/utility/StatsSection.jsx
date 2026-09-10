@@ -1,7 +1,7 @@
-import { motion, useInView } from "framer-motion";
+import { motion as Motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-import img from '../assets/image/DSC08309.webp'
+import img from '../assets/optimized/image/DSC08309.webp'
 
 const Counter = ({ end, suffix = "" }) => {
   const ref = useRef(null);
@@ -78,7 +78,7 @@ export default function StatsSection() {
 
           <div className="grid grid-cols-2 gap-8">
             {stats.map((item, index) => (
-              <motion.div
+              <Motion.div
                 key={index}
                 className="space-y-2"
                 whileHover={{ x: 6 }}
@@ -92,13 +92,13 @@ export default function StatsSection() {
                 <p className="text-gray-600 text-sm">
                   {item.desc}
                 </p>
-              </motion.div>
+              </Motion.div>
             ))}
           </div>
         </div>
 
         {/* RIGHT IMAGE */}
-        <motion.div
+        <Motion.div
           className="relative"
           initial={{ opacity: 0, x: 60 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -110,7 +110,7 @@ export default function StatsSection() {
             loading="lazy"
             alt="Orion Films Poduction"
           />
-        </motion.div>
+        </Motion.div>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
-"use client";
 import { motion } from "framer-motion";
+"use client";
 
 const images = [
   { src: "/img1.webp", x: 300, y: 150 },

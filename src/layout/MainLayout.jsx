@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 export default function MainLayout({ setOpenModal }) {
   return (
-    <div className=" sticky flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen">
       
       <Navbar setOpenModal={setOpenModal}/>
 
